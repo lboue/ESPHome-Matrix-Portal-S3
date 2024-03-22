@@ -77,3 +77,12 @@ binary_sensor:
         input: true
         pullup: true
       inverted: true
+
+# ALS-PT19 light sensor
+# https://cdn.sparkfun.com/assets/b/e/c/3/d/ALS-PT19_DS.pdf
+sensor:
+  - platform: adc
+    pin: 5
+    id: light_sensor
+    name: "Light sensor"
+    update_interval: 5s
